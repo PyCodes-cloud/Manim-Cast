@@ -2,14 +2,16 @@ from manim import *
 
 class instagram_logo(Scene):
 	def construct(self):
-
+		
+		# Creating Rounded Rectangle
 		rect_1 = RoundedRectangle(corner_radius=0.3, height=1.5, width=1.5,
                             color=PINK)
-
+		
+		# Circle
 		obj = Circle(radius=0.4, color=PINK).next_to(rect_1, DOWN, buff=-1.15)
 		dot = Dot(color=PINK).scale(0.6)\
-							 .next_to(obj, buff=0.15)\
-							 .shift(UP*0.4)
+				     .next_to(obj, buff=0.15)\
+				     .shift(UP*0.4)
 
 		self.play(
 			Create(rect_1),
