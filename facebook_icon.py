@@ -2,8 +2,11 @@ from manim import *
 
 class FacebookIcon(Scene):
 	def construct(self):
-
+		
+		# Creating circle
 		my_circle = Circle(radius=1.6, color=DARK_BLUE, fill_opacity=1.0)
+		
+		# Text 'f'
 		icon = Text("f", font='Calibri').scale(6.0)\
 							.set_color(WHITE)\
 							.move_to(my_circle)\
